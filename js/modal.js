@@ -1,18 +1,20 @@
 (() => {
   const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
+    // 1. Знаходимо елементи
     openModalBtn: document.querySelector("[data-modal-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector("[data-modal]"),
   };
 
+  // 2. Додаємо прослуховувачі кліків до кнопок
+  // Зверніть увагу: ми використовуємо .toggleModal, а не toggleModal
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
+  // 3. Створюємо функцію для перемикання класу
   function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
+    // Метод .classList.toggle() додасть 'is-open', якщо його немає,
+    // і видалить, якщо він є.
     refs.modal.classList.toggle("is-open");
   }
 })();

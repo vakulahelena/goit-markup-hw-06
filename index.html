@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="page-header hidden">
+    <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -234,6 +234,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -279,6 +280,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/tom-ford@2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -324,6 +326,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/camila-garcia@2x.jpg 2x"
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -369,6 +372,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/daniel-wilson@2x.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -425,6 +429,7 @@
               <div class="portfolio thumb">
                 <img
                   class="card-img"
+                  srcset="./images/banking-app@2x.jpg 2x"
                   src="./images/banking-app.jpg"
                   alt="Banking App"
                   width="360"
@@ -445,6 +450,7 @@
               <div class="portfolio thumb">
                 <img
                   class="card-img"
+                  srcset="./images/cashless-payment@2x.jpg 2x"
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -465,6 +471,7 @@
               <div class="portfolio thumb">
                 <img
                   class="card-img"
+                  srcset="./images/meditation-app@2x.jpg 2x"
                   src="./images/meditation-app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -485,6 +492,7 @@
               <div class="portfolio thumb">
                 <img
                   class="card-img"
+                  srcset="./images/taxi-service@2x.jpg 2x"
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -505,6 +513,7 @@
               <div class="portfolio thumb">
                 <img
                   class="card-img"
+                  srcset="./images/screen-illustrations@2x.jpg 2x"
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -524,6 +533,7 @@
             <li class="card-item">
               <div class="portfolio thumb">
                 <img
+                  srcset="./images/online-courses@2x.jpg 2x"
                   class="card-img"
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
@@ -636,7 +646,7 @@
 
     <!-- #region main-popup -->
 
-    <div class="backdrop data-modal">
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -721,17 +731,21 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="policy-link" href="#" target="_blank">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="policy-link" href="#" target="_blank"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
-          <button class="modal-btn" type="submit">Send</button>
+          <button class="order-button" type="submit">Send</button>
         </form>
       </div>
     </div>
     <!-- #endregion main-popup -->
 
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
